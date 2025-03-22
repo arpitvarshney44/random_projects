@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diprella - Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #f8f9fa;
+        }
+
+        .container {
+            background: white;
+            padding: 40px 50px;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 430px;
+        }
+
+        .logo {
+            text-align: center;
+            font-size: 32px;
+            color: #2d3436;
+            margin-bottom: 30px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #2d3436;
+            margin-bottom: 25px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .social-login {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.2s;
+            border: 1px solid #e0e0e0;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-2px);
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            color: #95a5a6;
+            margin: 25px 0;
+            font-size: 14px;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: "";
+            flex: 1;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        .divider span {
+            padding: 0 15px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #ecf0f1;
+            border-radius: 8px;
+            font-size: 15px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #0984e3;
+        }
+
+        .password-container {
+            position: relative;
+        }
+
+        .forgot-password {
+            text-align: right;
+            margin: 15px 0 25px;
+        }
+
+        .forgot-password a {
+            color: #0984e3;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 14px;
+            background: #0984e3;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .login-btn:hover {
+            background: #0873c4;
+        }
+
+        .signup-section {
+            text-align: center;
+            margin-top: 30px;
+            color: #636e72;
+            font-size: 15px;
+        }
+
+        .signup-section a {
+            color: #0984e3;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">Diprella</div>
+        <h2>Login to Your Account</h2>
+        
+        <div class="social-login">
+            <div class="social-icon">
+                <i class="fab fa-facebook-f" style="color: #1877f2;"></i>
+            </div>
+            <div class="social-icon">
+                <i class="fab fa-twitter" style="color: #1da1f2;"></i>
+            </div>
+            <div class="social-icon">
+                <i class="fab fa-google" style="color: #db4437;"></i>
+            </div>
+        </div>
+
+        <div class="divider">
+            <span>OR</span>
+        </div>
+
+        <form>
+            <div class="form-group">
+                <input type="email" placeholder="Email" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="password" placeholder="Password" required>
+            </div>
+
+            <div class="forgot-password">
+                <a href="#">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+
+        <div class="signup-section">
+            <p>New Here? <a href="#">Sign up</a> and discover a great<br>
+            amount of new opportunities!</p>
+        </div>
+    </div>
+</body>
+</html>
